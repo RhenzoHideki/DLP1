@@ -1,0 +1,3 @@
+[submodule "typst-ifsc"]
+	path = typst-ifsc
+	url = https://github.com/gabrielluizep/typst-ifsc.git
