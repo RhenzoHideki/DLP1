@@ -40,7 +40,7 @@ Neste laboratório remoto, os alunos deverão implementar uma solução do para 
       image(
       "./Figuras/Bin2bcd_SIM_fucional.png",width: 110%,
         ),
-    caption: [
+    caption:   [
          Obtendo o número de elementos no "Flow Summary"
       ],
       supplement: "Figura AE4"
