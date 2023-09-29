@@ -1,4 +1,4 @@
-#import "../typst-ifsc/templates/article.typ": *
+#import "../typst-ifsc/templates/article.typ":*
 
 #show: doc => article(
   title: "Relatório Atividade extra-classe 4
@@ -9,6 +9,7 @@
   date: "26 de Setembro de 2023",
   doc,
 )
+
 
 = Comando da Atividade extra-classe 4 (AE4):
 
@@ -38,7 +39,7 @@ Neste laboratório remoto, os alunos deverão implementar uma solução do para 
   #align(center)[
   #figure(
       image(
-      "./Figuras/Bin2bcd_SIM_fucional.png",width: 110%,
+      "./Figuras/Bin2bcd_logic_elements_basico.png",width: 110%,
         ),
     caption: [
          Obtendo o número de elementos no "Flow Summary"
@@ -72,10 +73,10 @@ Neste laboratório remoto, os alunos deverão implementar uma solução do para 
 #align(center)[
   #figure(
       image(
-      "./Figuras/Bin2bcd_SIM_fucional.png",width: 110%,
+      "./Figuras/Bin2bcd_propagation_delay.png",width: 110%,
         ),
     caption: [
-         Exemplo de simulação funcional de 0 a 9999
+         Exemplo de tempo máximo de propagação
       ],
       supplement: "Figura AE4"
     )
