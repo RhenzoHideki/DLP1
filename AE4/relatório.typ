@@ -146,4 +146,15 @@ end architecture;
 O código foi baseado nos código feitos em aula junto com o conhecimento adquirido. Utilizando 4 saídas std_logic_vector sm (Sinal milhar), sc (Sinal centena), sd (Sinal dezena), su (Sinal unidade), e utilizando uma entrada A . slice_mil , slice_cem , slice_dez , slice_uni são os intermediários para trocar de sinal não sinalizado (unsigned).
 
 == Simulação funcional
-Utilizando esse código , foi possível obter a Simulação funcional usando o ModelSim de acordo com o comando da questão 
+Utilizando esse código , foi possível obter a Simulação funcional usando o ModelSim de acordo com o comando da questão , desta forma foi feito alguns testes para testar o código , este foi o resultado obtido :
+#align(center)[
+  #figure(
+      image(
+      "./Figuras/Simulação_Ae4.png",width: 110%,
+        ),
+    caption: [
+         simulação funcional
+      ],
+      supplement: "Figura AE4"
+    )
+  ]
