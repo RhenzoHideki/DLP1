@@ -10,7 +10,12 @@
   doc,
 )
 
-
+#show raw.where(block: false): box.with(
+  fill: luma(240),
+  inset: (x: 3pt, y: 0pt),
+  outset: (y: 3pt),
+  radius: 2pt,
+)
 = Comando da Atividade extra-classe 4 (AE4):
 
 Neste laboratório remoto, os alunos deverão implementar uma solução do para um circuito conversor de binário para BCD (bin2bcd) com entrada binária variando entre 0 a 9999.
@@ -91,5 +96,54 @@ Neste laboratório remoto, os alunos deverão implementar uma solução do para 
 
   - Não é permitido o uso do algoritmo Double Dabble para fazer a conversão entre binário e BCD.
 
+#pagebreak()
 
+== Resolução da Atividade extra-classe 4 (AE4)
+Seguindo as orientações da atividade , foi feito um código conversor de binário para BCD (bin2bcd) com entrada binária variando entre 0 a 9999.
 
+== Código utilizado
+o código feito foi este:
+
+`
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity bin2bcd is
+  port (
+    A : in std_logic_vector(14 downto 0);
+	 sm : out std_logic_vector( 4 downto 0 );
+	 sc : out std_logic_vector( 4 downto 0 );
+	 sd : out std_logic_vector( 4 downto 0 );
+	 su: out std_logic_vector( 4 downto 0 )
+	 );
+	 
+end entity;
+
+architecture ae4 of bin2bcd is
+
+  signal A_uns : unsigned(14 downto 0);
+  signal slice_mil: unsigned(14 downto 0);
+  signal slice_cem: unsigned(14 downto 0);
+  signal	slice_dez: unsigned(14 downto 0);
+  signal	slice_uni: unsigned(14 downto 0);
+	
+begin
+	A_uns <= unsigned(A);
+	sm <= std_logic_vector(resize(slice_mil,5));
+	sc <= std_logic_vector(resize(slice_cem,5));
+	sd <= std_logic_vector(resize(slice_dez,5));
+	su <= std_logic_vector(resize(slice_uni,5));
+  -- Convert each binary digit to BCD
+	slice_mil <= A_uns/1000;
+	slice_cem <= (A_uns/100) rem 10;
+	slice_dez <= (A_uns/10) rem 10	;
+	slice_uni <= A_uns rem 10;
+end architecture; 
+`
+
+\
+O código foi baseado nos código feitos em aula junto com o conhecimento adquirido. Utilizando 4 saídas std_logic_vector sm (Sinal milhar), sc (Sinal centena), sd (Sinal dezena), su (Sinal unidade), e utilizando uma entrada A . slice_mil , slice_cem , slice_dez , slice_uni são os intermediários para trocar de sinal não sinalizado (unsigned).
+
+== Simulação funcional
+Utilizando esse código , foi possível obter a Simulação funcional usando o ModelSim de acordo com o comando da questão 
