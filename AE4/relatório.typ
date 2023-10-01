@@ -31,7 +31,7 @@ Neste laboratório remoto, os alunos deverão implementar uma solução do para 
       "./Figuras/Bin2bcd_SIM_fucional.png",width: 110%,
         ),
     caption: [
-         Exemplo de simulação funcional de 0 a 9999
+         Exemplo de simulação funcional de 0 a 9999 \ Fonte: Marcos Moecke
       ],
       supplement: "Figura AE4"
     )
@@ -47,7 +47,7 @@ Neste laboratório remoto, os alunos deverão implementar uma solução do para 
       "./Figuras/Bin2bcd_logic_elements_basico.png",width: 110%,
         ),
     caption:   [
-         Obtendo o número de elementos no "Flow Summary"
+         Obtendo o número de elementos no "Flow Summary" \ Fonte: Marcos Moecke
       ],
       supplement: "Figura AE4"
     )
@@ -59,7 +59,7 @@ Neste laboratório remoto, os alunos deverão implementar uma solução do para 
       "./Figuras/Bin2bcd_logic_elements_basico_RUS.png",width: 110%,
         ),
     caption: [
-         Obtendo o número de elementos no "Resource Usage Summary"
+         Obtendo o número de elementos no "Resource Usage Summary" \ Fonte: Marcos Moecke
       ],
       supplement: "Figura AE4"
     )
@@ -81,7 +81,7 @@ Neste laboratório remoto, os alunos deverão implementar uma solução do para 
       "./Figuras/Bin2bcd_propagation_delay.png",width: 110%,
         ),
     caption: [
-         Exemplo de tempo máximo de propagação
+         Exemplo de tempo máximo de propagação \ Fonte: Marcos Moecke
       ],
       supplement: "Figura AE4"
     )
@@ -153,7 +153,7 @@ Utilizando esse código , foi possível obter a Simulação funcional usando o M
       "./Figuras/Simulação_Ae4.png",width: 110%,
         ),
     caption: [
-         simulação funcional
+         simulação funcional \ Fonte: Elaborada pelo autor
       ],
       supplement: "Figura AE4"
     )
@@ -170,7 +170,7 @@ Utilizando esse código , foi possível obter a Simulação funcional usando o M
       "./Figuras/Screenshot from 2023-09-30 20-02-13.png",width: 110%,
         ),
     caption: [
-         simulação funcional
+         simulação funcional \ Fonte: Elaborada pelo autor
       ],
       supplement: "Figura AE4"
     )
@@ -182,7 +182,7 @@ Utilizando esse código , foi possível obter a Simulação funcional usando o M
       "./Figuras/Screenshot from 2023-09-30 20-05-02.png",width: 110%,
         ),
     caption: [
-         simulação funcional
+         simulação funcional \ Fonte: Elaborada pelo autor
       ],
       supplement: "Figura AE4"
     )
@@ -199,7 +199,7 @@ Utilizando esse código , foi possível obter a Simulação funcional usando o M
       "./Figuras/Screenshot from 2023-09-29 18-46-20.png",width: 100%,
         ),
     caption: [
-         simulação funcional
+         simulação funcional \ Fonte: Elaborada pelo autor
       ],
       supplement: "Figura AE4"
     )
@@ -214,7 +214,7 @@ A seguir uma imagem do RTL viewer após a compilação do código.
       "./Figuras/Screenshot from 2023-10-01 11-27-02.png",width: 100%,
         ),
     caption: [
-         RTL viewer
+         RTL viewer \ Fonte: Elaborada pelo autor
       ],
       supplement: "Figura AE4"
     )
@@ -227,10 +227,10 @@ A seguir os prints dos Technology Maps tirados da atividade.
 #align(center)[
   #figure(
       image(
-      "./Figuras/Screenshot from 2023-10-01 11-29-32.png",width: 100%,
+      "./Figuras/Screenshot from 2023-10-01 11-29-32.png",width: 110%,
         ),
     caption: [
-         Technology Map Viewer (Post-Fitting)
+         Technology Map Viewer (Post-Fitting) \ Fonte: Elaborada pelo autor
       ],
       supplement: "Figura AE4"
     )
@@ -239,15 +239,13 @@ A seguir os prints dos Technology Maps tirados da atividade.
   #align(center)[
   #figure(
       image(
-      "./Figuras/Screenshot from 2023-10-01 11-30-06.png",width: 100%,
+      "./Figuras/Screenshot from 2023-10-01 11-30-06.png",width: 110%,
         ),
     caption: [
-         Technology Map Viewer (Post Mapping)
+         Technology Map Viewer (Post Mapping) \ Fonte: Elaborada pelo autor
       ],
       supplement: "Figura AE4"
     )
   ]
-
-#pagebreak()
   = Conclusão
 Observando os resultados obtidos , é crível que eles são aceitáveis com os recursos aprendidos até o momento. Porém é bem possível diversas possíveis otimizações como mencionando anteriormente , alterando tanto o tempo de propagação quanto o número de elementos. Ou também é possível que diminuir o tempo de propagação leve um uso maior de elementos lógicos.
