@@ -193,10 +193,10 @@ Utilizando esse código , foi possível obter a Simulação funcional usando o M
 #pagebreak()
   == Tempo de propagação
   Para essa atividade também foi requisitado que fosse estudado o quão rápido era a execução do código e o tempo de propagação na placa. Esse resultado é mostrado na figura a seguir:
-    #align(center)[
+#align(center)[
   #figure(
       image(
-      "./Figuras/Screenshot from 2023-09-29 18-46-20.png",width: 110%,
+      "./Figuras/Screenshot from 2023-09-29 18-46-20.png",width: 100%,
         ),
     caption: [
          simulação funcional
@@ -204,7 +204,49 @@ Utilizando esse código , foi possível obter a Simulação funcional usando o M
       supplement: "Figura AE4"
     )
   ]
-  Pode-se ver na figura 8 que o tempo de propagação é de 57.4 ms , essa é a pior situação simulada possível com o modelo utilizando sua forma de operação mais lenta , dessa forma pode-se fazer a analise e decidir se é aceitável ou não a propagação . O que é possível fazer para alterar esses valores é alterar o valor de seed das simulações , alterar a placa utilizada mantendo-se dentro da familia Cyclone IV E , e procurar por outras otimizações no código e distribuição dos elementos lógicos na placa e diminuir suas distancias.  
+  Pode-se ver na figura 8 que o tempo de propagação é de 57.4 ms , essa é a pior situação simulada possível com o modelo utilizando sua forma de operação mais lenta , dessa forma pode-se fazer a analise e decidir se é aceitável ou não a propagação . O que é possível fazer para alterar esses valores é alterar o valor de seed das simulações , alterar a placa utilizada mantendo-se dentro da familia Cyclone IV E , e procurar por outras otimizações no código e distribuição dos elementos lógicos na placa e diminuir suas distancias.
+#pagebreak()
+== RTL Viewer
+A seguir uma imagem do RTL viewer após a compilação do código.
+#align(center)[
+  #figure(
+      image(
+      "./Figuras/Screenshot from 2023-10-01 11-27-02.png",width: 100%,
+        ),
+    caption: [
+         RTL viewer
+      ],
+      supplement: "Figura AE4"
+    )
+  ]
+  É possível ver no RTL Viewer os circuitos utilizados para satisfazer o código. Utilizando 3 circuitos de divisão e mais 3 circuitos de Mod (Resto da divisão inteira) .
+
+#pagebreak()
+== Technology Map
+A seguir os prints dos Technology Maps tirados da atividade.
+#align(center)[
+  #figure(
+      image(
+      "./Figuras/Screenshot from 2023-10-01 11-29-32.png",width: 100%,
+        ),
+    caption: [
+         Technology Map Viewer (Post-Fitting)
+      ],
+      supplement: "Figura AE4"
+    )
+  ]
+
+  #align(center)[
+  #figure(
+      image(
+      "./Figuras/Screenshot from 2023-10-01 11-30-06.png",width: 100%,
+        ),
+    caption: [
+         Technology Map Viewer (Post Mapping)
+      ],
+      supplement: "Figura AE4"
+    )
+  ]
 
 #pagebreak()
   = Conclusão
