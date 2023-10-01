@@ -98,8 +98,8 @@ Neste laboratório remoto, os alunos deverão implementar uma solução do para 
 
 #pagebreak()
 
-== Resolução da Atividade extra-classe 4 (AE4)
-Seguindo as orientações da atividade , foi feito um código conversor de binário para BCD (bin2bcd) com entrada binária variando entre 0 a 9999.
+= Resolução da Atividade extra-classe 4 (AE4)
+Seguindo as orientações da atividade , foi feito um código conversor de binário para BCD (bin2bcd) com entrada binária variando entre 0 a 9999. A familia utilizada foi Cyclone IV E e a placa escolhida foi a EP4CE115F29C8 , estando de acordo com as orientações anteriores.
 
 == Código utilizado
 o código feito foi este:
@@ -158,3 +158,54 @@ Utilizando esse código , foi possível obter a Simulação funcional usando o M
       supplement: "Figura AE4"
     )
   ]
+  Foi analisado 3 valores nessa simulação com A sendo 4578, 9998, 0003, é possível ver que os valores de sm, sc, sd, su foram alterados nos momentos que A recebeu os valores de entrada. Os resultados satisfazem o objetivo do código e da atividade extra-classe 4.
+
+  == Número de elementos lógicos
+  
+  Com a simulação funcional feita , é possível ter certeza ver que foi alçado o objetivo em código , mas é necessária a analise de quão custoso o código está sendo e se é aceitável o número de recursos.
+  As figuras a seguir mostram o número de recursos utilizados para que o código seja implementado:
+  #align(center)[
+  #figure(
+      image(
+      "./Figuras/Screenshot from 2023-09-30 20-02-13.png",width: 110%,
+        ),
+    caption: [
+         simulação funcional
+      ],
+      supplement: "Figura AE4"
+    )
+  ]
+
+  #align(center)[
+  #figure(
+      image(
+      "./Figuras/Screenshot from 2023-09-30 20-05-02.png",width: 110%,
+        ),
+    caption: [
+         simulação funcional
+      ],
+      supplement: "Figura AE4"
+    )
+  ]
+
+  Esses são os registros da quantidade de recurso utilizada para funcionamento se baseando no código anterior. o valor representa 1% do total de elementos lógicos da placa , porém utiliza 1272 elementos lógicos. Após algumas tentativas tentando otimizar o uso dos elementos lógicos , foi concluído que com os recursos aprendidos até a AE4 não foi observado maneira melhor ou mais intuitiva de executar um código que atendesse as requisições sem alterar outras partes além do código.
+
+#pagebreak()
+  == Tempo de propagação
+  Para essa atividade também foi requisitado que fosse estudado o quão rápido era a execução do código e o tempo de propagação na placa. Esse resultado é mostrado na figura a seguir:
+    #align(center)[
+  #figure(
+      image(
+      "./Figuras/Screenshot from 2023-09-29 18-46-20.png",width: 110%,
+        ),
+    caption: [
+         simulação funcional
+      ],
+      supplement: "Figura AE4"
+    )
+  ]
+  Pode-se ver na figura 8 que o tempo de propagação é de 57.4 ms , essa é a pior situação simulada possível com o modelo utilizando sua forma de operação mais lenta , dessa forma pode-se fazer a analise e decidir se é aceitável ou não a propagação . O que é possível fazer para alterar esses valores é alterar o valor de seed das simulações , alterar a placa utilizada mantendo-se dentro da familia Cyclone IV E , e procurar por outras otimizações no código e distribuição dos elementos lógicos na placa e diminuir suas distancias.  
+
+#pagebreak()
+  = Conclusão
+Observando os resultados obtidos , é crível que eles são aceitáveis com os recursos aprendidos até o momento. Porém é bem possível diversas possíveis otimizações como mencionando anteriormente , alterando tanto o tempo de propagação quanto o número de elementos. Ou também é possível que diminuir o tempo de propagação leve um uso maior de elementos lógicos.
