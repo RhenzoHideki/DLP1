@@ -162,7 +162,7 @@ Utilizando esse código , foi possível obter a Simulação funcional usando o M
 
   == Número de elementos lógicos
   
-  Com a simulação funcional feita , é possível ter certeza ver que foi alçado o objetivo em código , mas é necessária a analise de quão custoso o código está sendo e se é aceitável o número de recursos.
+  Com a simulação funcional feita , é possível ter certeza ver que foi alçado o objetivo em código , mas é necessária a analise de quãao custoso o código está sendo e se é aceitável o número de recursos.
   As figuras a seguir mostram o número de recursos utilizados para que o código seja implementado:
   #align(center)[
   #figure(
@@ -204,7 +204,7 @@ Utilizando esse código , foi possível obter a Simulação funcional usando o M
       supplement: "Figura AE4"
     )
   ]
-  Pode-se ver na figura 8 que o tempo de propagação é de 57.4 ms , essa é a pior situação simulada possível com o modelo utilizando sua forma de operação mais lenta , dessa forma pode-se fazer a analise e decidir se é aceitável ou não a propagação . O que é possível fazer para alterar esses valores é alterar o valor de seed das simulações , alterar a placa utilizada mantendo-se dentro da familia Cyclone IV E , e procurar por outras otimizações no código e distribuição dos elementos lógicos na placa e diminuir suas distancias.
+  Pode-se ver na figura 8 que o tempo de propagação é de 57.4 ns , essa é a pior situação simulada possível com o modelo utilizando sua forma de operação mais lenta , dessa forma pode-se fazer a analise e decidir se é aceitável ou não a propagação . O que é possível fazer para alterar esses valores é alterar o valor de seed das simulações , alterar a placa utilizada mantendo-se dentro da familia Cyclone IV E , e procurar por outras otimizações no código e distribuição dos elementos lógicos na placa e diminuir suas distancias.
 #pagebreak()
 == RTL Viewer
 A seguir uma imagem do RTL viewer após a compilação do código.
