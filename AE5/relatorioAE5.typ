@@ -59,7 +59,29 @@ No total foram Utilizados 6 displays de sete segmentos , 6 conversores de BCD pa
 Após o sistema ter todos seu componentes montas foi feita a pinagem e compilação completa.
 
 === Pinagem 
-A pinagem 
+A pinagem pode ser vista nesta 2 figuras :
+#align(center)[
+  #figure(
+      image(
+      "./Figuras/pinagem1.png",width: 100%,
+        ),
+    caption: [
+         Parte 1 da pinagem \ Fonte: Elaborada pelo autor
+      ],
+      supplement: "Figura AE5"
+    )
+  ]
+  #align(center)[
+  #figure(
+      image(
+      "./Figuras/pinagem2.png",width: 100%,
+        ),
+    caption: [
+         Parte 2 da pinagem \ Fonte: Elaborada pelo autor
+      ],
+      supplement: "Figura AE5"
+    )
+  ]
 === Número de elementos lógicos
 O numero de elementos lógicos por componente:
 #align(center)[
