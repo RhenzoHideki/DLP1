@@ -1,7 +1,7 @@
 #import "../typst-ifsc/templates/article.typ":*
 
 #show: doc => article(
-  title: "Relatório projeto final",
+  title: "Relatório",
   subtitle: "Cenário 2 - Travessia Controlada por Botoeira com Sinalização Noturna, Sinalização Piscante, Avisos Sonoros",
   // Se apenas um autor colocar , no final para indicar que é um array
   authors: ("Rhenzo Hideki Silva Kajikawa","Matheus Pires Salazar "),
@@ -15,7 +15,7 @@
 Este projeto, feito na matéria de Dispositivos lógicos programáveis , tem como objetivo simular uma situação de transito , onde, como descrito, é feita a travessia de pedestres em diferentes cenários tanto de manhã quanto a noite . Além de tentar otimizar o transito , evitando fechamentos de semáforos da via principal de forma desnecessária.
 
 == Motivação
-Em aula foram ensinados novos conceitos de VHDL, e agora como projeto final foi aplicado desde  o mais básico até conceitos mais complexos. Dessa forma esse projeto visa certificar que foram aprendidos todos esses conhecimentos.
+Em aula foram ensinados novos conceitos de VHDL, e agora como foi aplicado desde  o mais básico até conceitos mais complexos. Dessa forma esse projeto visa certificar que foram aprendidos todos esses conhecimentos.
 
 #pagebreak()
 
@@ -36,7 +36,7 @@ Fora de aula foram decididas como seria a divisão do projeto. Foi decidido que 
     caption: [
          Elaboração das máquinas de estado \ Fonte: Elaborada pelo autor
       ],
-      supplement: "Figura projeto final"
+      supplement: "Figura"
     )
   ]
 
@@ -57,7 +57,7 @@ A visualização do projeto ficou dessa forma:
     caption: [
          Elaboração das máquinas de estado \ Fonte: Elaborada pelo autor
       ],
-      supplement: "Figura projeto final"
+      supplement: "Figura"
     )
   ]
 
@@ -80,9 +80,90 @@ A saída de contagem tem como objetivo passar por um conversor binário para bcd
 Após ter todos os componentes do projeto foi feita a junção deles.
 === Elementos lógicos do sistema
 
+
+#align(center)[
+  #figure(
+      image(
+      "./Figuras/div_clock_EL.png",width: 100%,
+        ),
+    caption: [
+         RTL viewer do divisor de clock \ Fonte: Elaborada pelo autor
+      ],
+      supplement: "Figura"
+    )
+  ]
+
+
+  #align(center)[
+  #figure(
+      image(
+      "./Figuras/bin2bcd_EL.png",width: 100%,
+        ),
+    caption: [
+         RTL viewer do bin2bcd \ Fonte: Elaborada pelo autor
+      ],
+      supplement: "Figura"
+    )
+  ]
+
+
+   #align(center)[
+  #figure(
+      image(
+      "./Figuras/bcd2ssd_EL.png",width: 100%,
+        ),
+    caption: [
+         RTL viewer do bcd2ssd \ Fonte: Elaborada pelo autor
+      ],
+      supplement: "Figura"
+    )
+  ] 
+
+
 === RTL Viewer
+Aqui estão os RTLS viewers para cada componente:
+
+#align(center)[
+  #figure(
+      image(
+      "./Figuras/div_clock_RTL.png",width: 100%,
+        ),
+    caption: [
+         RTL viewer do divisor de clock \ Fonte: Elaborada pelo autor
+      ],
+      supplement: "Figura"
+    )
+  ]
+
+
+  #align(center)[
+  #figure(
+      image(
+      "./Figuras/bin2bcd_RTL.png",width: 100%,
+        ),
+    caption: [
+         RTL viewer do bin2bcd \ Fonte: Elaborada pelo autor
+      ],
+      supplement: "Figura"
+    )
+  ]
+
+  
+   #align(center)[
+  #figure(
+      image(
+      "./Figuras/bcd2ssd_RTL.png",width: 100%,
+        ),
+    caption: [
+         RTL viewer do bcd2ssd \ Fonte: Elaborada pelo autor
+      ],
+      supplement: "Figura"
+    )
+  ] 
 
 = Implementação na placa
+
+
 
 == Pinagem
 
