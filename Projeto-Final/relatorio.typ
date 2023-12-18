@@ -68,13 +68,11 @@ O componentes utilizados para o projeto podem ser visualizados na Figura 2.
 
 No total foram utilizados 2 displays de sete segmentos , 2 conversor de BCD para ssd , 1 conversor de Binário para BCD , 1 maquina de estados , 1 divisor de clock e 1 clock de 50 MHz , 2 botões para pedestres , 2 LEDs para simbolizar som e luz , 3 LEDs para semáforo de carros e mais 2 LEDs para semáforo de pedestres.
 
-Como dito dito anteriormente , nesse projeto foi abordado maquinas de estados , a partir disso também foi trabalhado com o uso de 4 componentes menores. 
-
 Um divisor de clock com 2 entradas , reset e clock in , e uma saída clock out . Esse divisor tem como objetivo diminuir os pulsos de enable dos segundos , podendo ajustar toda contagem do sistema para diferentes clocks . Apenas trocando o valor genérico do componente "div". Esse divisor de clock foi utilizado anteriormente no projeto do relógio que foi feito em sala , dessa maneira para otimizar o tempo foi decidido reutiliza-lo.
 
 Para a maquina de estado foram criada com 5 entradas , a divisão delas sendo , 1 entrada padrão de reset, 1 entrada para o clock onde é conectada com o divisor de clock. 2 entradas que são das botoeiras para os pedestres que quando apertarem faz o estado mudar para abrir o semáforo dos pedestres e por ultimo uma entrada do sensor de noite.
 
-Existem 8 saídas para a maquina de estado , 3 LEDs que servem para o semáforo dos carros , 2 LEds para o semáforo dos pedestres junto a 1 saída de contagem e uma saída de som.
+Existem 8 saídas para a maquina de estado , 3 LEDs que servem para o semáforo dos carros , 2 LEds para o semáforo dos pedestres junto a 1 saída de contagem , uma saída de som e outra para luzes .
 
 A saída de contagem tem como objetivo passar por um conversor binário para bcd , desse saem 2 pontos , 1 deles é para o decimal e outro a unidade que passa para um conversor bcd2ssd , esses são mostrados em 2 display de 7 segmentos que é habilitado quando o pedestre deve passar.
   
@@ -89,7 +87,7 @@ O numero de elementos lógicos por componente:
       "./Figuras/div_clock_EL.png",width: 100%,
         ),
     caption: [
-         RTL viewer do divisor de clock \ Fonte: Elaborada pelo autor
+         Elementos lógicos do divisor de clock \ Fonte: Elaborada pelo autor
       ],
       supplement: "Figura"
     )
@@ -104,7 +102,7 @@ O numero de elementos lógicos por componente:
       "./Figuras/bin2bcd_EL.png",width: 100%,
         ),
     caption: [
-         RTL viewer do bin2bcd \ Fonte: Elaborada pelo autor
+         Elementos lógicos do bin2bcd \ Fonte: Elaborada pelo autor
       ],
       supplement: "Figura"
     )
@@ -118,7 +116,7 @@ O numero de elementos lógicos por componente:
       "./Figuras/bcd2ssd_EL.png",width: 100%,
         ),
     caption: [
-         RTL viewer do bcd2ssd \ Fonte: Elaborada pelo autor
+         Elementos lógicos do bcd2ssd \ Fonte: Elaborada pelo autor
       ],
       supplement: "Figura"
     )
@@ -131,7 +129,7 @@ O numero de elementos lógicos por componente:
       "./Figuras/sinaleira_EL.jpeg",width: 100%,
         ),
     caption: [
-         RTL viewer da maquina de estado \ Fonte: Elaborada pelo autor
+         Elementos lógicos da maquina de estado \ Fonte: Elaborada pelo autor
       ],
       supplement: "Figura"
     )
@@ -145,7 +143,7 @@ O numero de elementos lógicos por componente:
       "./Figuras/cenario2_EL.jpeg",width: 100%,
         ),
     caption: [
-         RTL viewer do cenario \ Fonte: Elaborada pelo autor
+         Elementos lógicos do cenario \ Fonte: Elaborada pelo autor
       ],
       supplement: "Figura"
     )
@@ -264,7 +262,7 @@ As maquinas de estados se mostraram desafiadoras , pois além de um conteúdo no
 A implementação na botoeira foi feita de maneira simples , porém não se tinha pensado em diferentes situações cotidianas como o travamento de uma botoeira, para implementa-lo foi decidido utilizar um contador que contaria o intervalo de tempo que a botoeira ficaria ativa , após um determinado tempo , as botoeiras seriam desabilitadas até que houve-se alguma intervenção que tirasse os inputs das botoeiras.
 
 A criação de diferentes cenários para testagem do cenário se mostrou extremamente complicado uma vez que envolvia diferentes métodos para diferentes falhas. Além disso ao primeiro contato sempre é pensado em cenários mais ideais , deixando complexo a visão de como implementar cenário que podem comprometer o fluxo desejado.
-
+#pagebreak()
 = Conclusão
 Com esse projeto foi possível colocar em prática todo o conhecimento aprendido nesse semestre. Desde da composição de entidades menores , até maquinas de estados que exigem um maior planejamento . 
 
