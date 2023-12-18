@@ -1,0 +1,18 @@
+Remover:
+"Como dito dito anteriormente , nesse projeto foi abordado maquinas de estados , a
+partir disso também foi trabalhado com o uso de 4 componentes menores"
+
+Em :
+
+"Existem 8 saídas para a maquina de estado , 3 LEDs que servem para o semáforo dos
+carros , 2 LEds para o semáforo dos pedestres junto a 1 saída de contagem e uma saída de som." 
+Deve se adicionar a saida de luz noturna.
+
+Alterar:
+
+Figura 3-7: RTL viewer do cenario
+Figura 3-7: Elementos logicos do cenario
+
+Figura 12-13 -> alterar figuras para a simulação nova
+
+Jogar conclusão para proxima pagina
