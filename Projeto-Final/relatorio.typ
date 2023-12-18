@@ -252,6 +252,7 @@ A implementação na placa foi feita em aula com o kit DE2-115 da TERASIC.
       supplement: "Figura"
     )
   ]
+  Pinagem posteriormente em aula foi trocada para facilitar o uso , trocando os botões pelas chaves . Apenas alterando o botao1 para SW[17]	(PIN_Y23) , botao 2 para SW[16]	(PIN_Y24) e reset para SW[15]	(PIN_AA22). A razão dessa troca dos botões pelos switchs é que testando de diferentes formas , não foi possível inverter a entrada dos botões que começam em 1. 
 
 = Dificuldades
 
