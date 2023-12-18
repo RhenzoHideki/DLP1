@@ -214,7 +214,7 @@ A implementação na placa foi feita em aula com o kit DE2-115 da TERASIC.
 #align(center)[
   #figure(
       image(
-      "./Figuras/simulacao_dia.jpeg",width: 120%,
+      "./Figuras/dia.png",width: 120%,
         ),
     caption: [
          Simulação Dia \ Fonte: Elaborada pelo autor
@@ -225,7 +225,7 @@ A implementação na placa foi feita em aula com o kit DE2-115 da TERASIC.
 #align(center)[
   #figure(
       image(
-      "./Figuras/simulacao_noite.jpeg",width: 120%,
+      "./Figuras/noite.png",width: 120%,
         ),
     caption: [
          Simulação Noite \ Fonte: Elaborada pelo autor
